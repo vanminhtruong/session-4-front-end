@@ -1,0 +1,238 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    header .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu ul li {
+        margin: 10px 0;
+    }
+
+    header .logo-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .group-list-team .list-team{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    header .menu {
+        background-color: #333;
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+    
+    header .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header .menu ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    header .menu ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+    
+    header .menu ul li a:hover {
+        background-color: #575757;
+        border-radius: 4px;
+    }
+    
+        /* Sidebar styles */
+    header .menu {
+        position: fixed;
+        height: 100%;
+        width: 0px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+        z-index: 100000;
+    }
+
+
+    .menu li{
+        /* border: 1px solid blue; */
+        width: 160px;
+        /* border: 1px solid blue; */
+        padding-left: 20px;
+    }
+    
+    .menu a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        text-align: left;
+    }
+    
+    .menu a:hover {
+        color: #f1f1f1;
+    }
+    
+    .content .open-sidebar-btn{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    header .close{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+    }
+    .group-intro{
+        flex-wrap: wrap;
+    }
+    
+    .group-intro .banner-intro img{
+        max-width: 90%;
+    }
+
+    footer .content-footer-2{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 0;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .menu ul li {
+        margin: 5px 0;
+    }
+
+    header .language select {
+        margin-top: 10px;
+        width: 100px;
+    }
+
+    .group-intro h1 {
+        font-size: 2rem;
+    }
+
+    .group-intro .content-intro {
+        text-align: center;
+    }
+
+    .group-list-team .list-team {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 0px 20px;
+    }
+
+    /* Content Position */
+    .container .content-position {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container .text-position {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .group-intro .banner-intro{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Header */
+    header .logo-header img {
+        width: 60px;
+    }
+
+    header{
+        background-color: pink;
+    }
+
+    header .menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    header .menu ul li {
+        margin: 5px 0;
+    }
+
+    /* Group Intro */
+    .group-intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .group-intro .content-intro p {
+        font-size: 0.9rem;
+    }
+    /* Team Section */
+    .group-list-team .list-team {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .group-list-team .set-style {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    footer .content-footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    footer .content-footer-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
